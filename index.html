@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    /*Comunes*/
+    @font-face {
+    font-family: 'Bebas Neue Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bebas Neue Regular'), url('BebasNeue Regular.woff') format('woff');
+    }
+    *{box-sizing: border-box}
+    body{
+        background-color: #545454;
+        height: 98vh;
+        width: 99vw;
+        border: 2px solid #fecc4c;
+        font-family: 'Bebas Neue Regular';
+        border-radius: 8px;
+    }
+    #container{
+        float: left;
+        background-color: #545454;
+        text-align: center
+    }
+    h1{
+        color:#fff;
+        text-shadow: 0px 1px 10px #000
+    }
+    #accesos{
+        text-align: left
+    }
+    h2{
+        color:#fecc4c;
+        text-shadow: 0px 1px 5px rgb(78, 54, 3)
+    }
+    a{
+        color:#fff;
+        font-weight:bold
+    }
+    p{color:red}
+    
+    input{   border: 2px solid #fecc4c;
+            border-radius: 25px;
+            padding: 20px; 
+            width: 200px;
+            height: 15px;
+        }
+    button{
+            background-color:#fecc4c; 
+            border-radius: 25px;
+            width: 100px;
+            padding: 20px;
+            height: 15px;
+            margin: 2px
+        }
+        
+    @media(max-width:1300px){
+        body{
+        height: 98vh;
+        }
+    }
+    @media(min-width:500px){
+        h1{font-size: 6vw}
+        h2{font-size: 4vw}
+        p{font-size: 2vw}
+        input{
+            border-radius: 3.75vw;
+            padding: 3vw; 
+            width: 30vw;
+            height: 2.25vw;
+        }button{
+            border-radius: 2vw;
+            margin: 1vw;
+            width: 1.25vw;
+            padding: 2vw;
+            height: 1.25vw;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="titulo">BUSCAR POST</h1>
+        <div class="busqueda">
+            <input type="text" placeholder="PC001...">
+        </div>
+        <p id="alerta"></p>
+    
+    <div id="accesos">
+            <h2>Accesos rapidos</h2>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfZodZo0EL7mm25ngd53Fv10YYo9iqXblJsihX1gcBhmlz3zg/viewform">-Encuesta</a></p>
+            <p><a href="https://www.felizemprendiendo.com/">-Blog</a></p>
+    </div>
+</div>
+    <script src="myAjax.js"></script>
+    <script src='bootstrap.js'></script>
+</body>
+</html>
