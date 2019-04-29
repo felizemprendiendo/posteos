@@ -21,7 +21,6 @@ window.onresize=cR
 //FUNCIONES
 //----> Creando la alerta
 function alertContent(text){
-    console.log("entro a alert")
     alerta.style.visibility=text?"visible":"hidden"
     alerta.textContent=text
 }
